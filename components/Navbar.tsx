@@ -55,9 +55,9 @@ const Navbar = () => {
   });
 
   return (
-    <div className="w-full flex justify-between items-center border-b-2 border-gray-200 py-4 px-4">
+    <div className="w-full flex justify-between items-center border-b-2 border-gray-200 py-4 px-2">
       <Link href="/">
-        <div className="w-[100px] md:w-[130px]  ">
+        <div className="w-[80px] md:w-[130px]  ">
           <Image
             className="cursor-pointer"
             src={Logo}
@@ -76,8 +76,8 @@ const Navbar = () => {
             type="text"
             value={searchValue}
             onChange={(e) => setSearchValue(e.target.value)}
-            placeholder="Search accounts and videos"
-            className="bg-primary p-1 md:p-3 text-sm md:text-md font-medium border-2 border-gray-100 focus:outline-none focus:border-2 focus:border-gray-300 w-[150px] md:w-[300px] rounded-full top-0 md:placeholder:text-base placeholder:text-[10px]"
+            placeholder="Search accounts & videos"
+            className="bg-primary p-1 md:p-3 text-sm md:text-md font-medium border-2 border-gray-100 focus:outline-none focus:border-2 focus:border-gray-300 w-[130px] md:w-[300px] rounded-full top-0 md:placeholder:text-base placeholder:text-[10px]"
           />
           <button className="absolute hidden md:block md:right-5 right-6 top-4 border-l-2 border-gray-300 pl-4 md:text-lg text-sm text-gray-400">
             <BiSearch />
@@ -102,8 +102,8 @@ const Navbar = () => {
               <Link href="/">
                 <>
                   <Image
-                    width={40}
-                    height={40}
+                    width={30}
+                    height={30}
                     className="rounded-full cursor-pointer"
                     src={userProfile?.image}
                     alt="profile photo"
